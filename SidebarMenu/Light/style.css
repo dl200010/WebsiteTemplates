@@ -71,7 +71,7 @@ b, strong {
     transform-origin: bottom left;
 }
 
-#sidebar .active {
+#sidebar.active {
     margin-left: -250px;
     transform: rotateY(100deg);
 }
