@@ -51,16 +51,16 @@ b, strong {
     margin: 40px 0;
 }
 
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
 .wrapper {
     display: flex;
     width: 100%;
     align-items: stretch;
     perspective: 1500px;
 }
-
-/* ---------------------------------------------------
-    SIDEBAR STYLE
------------------------------------------------------ */
 
 #sidebar {
     min-width: 250px;
@@ -104,23 +104,21 @@ b, strong {
     font-size: 1.1em;
     display: block;
 }
-
 #sidebar ul li a:hover {
     color: #7386D5;
     background: #ffffff;
 }
 
-#sidebar ul li.active > a,
-#sidebar a[aria-expanded="true"] {
+#sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #ffffff;
     background: #6d7fcc;
 }
 
-#sidebar a[data-toggle="collapse"] {
+a[data-toggle="collapse"] {
     position: relative;
 }
 
-#sidebar .dropdown-toggle::after {
+.dropdown-toggle::after {
     display: block;
     position: absolute;
     top: 50%;
@@ -128,17 +126,17 @@ b, strong {
     transform: translateY(-50%);
 }
 
-#sidebar ul ul a {
+ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
     background: #6d7fcc;
 }
 
-#sidebar ul.CTAs {
+ul.CTAs {
     padding: 20px;
 }
 
-#sidebar ul.CTAs a {
+ul.CTAs a {
     text-align: center;
     font-size: 0.9em !important;
     display: block;
@@ -146,13 +144,12 @@ b, strong {
     margin-bottom: 5px;
 }
 
-#sidebar a.download {
+a.download {
     background: #fff;
     color: #7386D5;
 }
 
-#sidebar a.article,
-#sidebar a.article:hover {
+a.article, a.article:hover {
     background: #6d7fcc !important;
     color: #ffffff !important;
 }
